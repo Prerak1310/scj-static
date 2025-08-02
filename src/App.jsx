@@ -52,7 +52,7 @@ function AppContent() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route
+        {/*        <Route
           path="/"
           element={
             !showLanding ? (
@@ -62,7 +62,8 @@ function AppContent() {
             )
           }
         />
-        <Route path="/home" element={<HomePage />} />
+*/}
+        <Route path="/" element={<HomePage />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/404" element={<NotFound />} />
