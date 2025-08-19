@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import {
+  MessageCircle,
   X,
   CheckCircle,
   Send,
@@ -351,7 +352,6 @@ export default function ContactPage() {
                           value="https://web3forms.com/success"
                         />
                         <input type="hidden" name="from_name" value="Enquiry" />
-                        <input type="hidden" name="subject" value="Enquiry" />
                         <input
                           type="text"
                           name="username"
@@ -401,6 +401,26 @@ export default function ContactPage() {
                     </div>
                   </div>
 
+                  <div className="space-y-2">
+                    <div className="relative">
+                      <MessageCircle
+                        size={20}
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-blue-400 transition-colors duration-300"
+                      />
+                      <select
+                        name="subject"
+                        className="w-full bg-slate-700/80 border-2 border-slate-600 text-white pl-12 pr-10 py-4 rounded-xl text-lg transition-all duration-400 focus:border-blue-500 focus:bg-slate-700/95 focus:outline-none focus:ring-2 focus:ring-blue-500/20 appearance-none"
+                        defaultValue=""
+                        required
+                      >
+                        <option value="" disabled hidden>
+                          Choose here
+                        </option>
+                        <option value="user">Category 1</option>
+                        <option value="admin">Category 2</option>
+                      </select>
+                    </div>
+                  </div>
                   <div className="space-y-2">
                     <div className="relative">
                       <MessageSquare

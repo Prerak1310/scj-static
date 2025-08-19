@@ -15,10 +15,12 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ServicesPage from "./pages/ServicesPage";
 import CareersPage from "./pages/CarrersPage";
+import TeamPage from "./pages/TeamPage";
 import TalentPage from "./pages/TalentPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import AgreementModal from "./pages/multistepform/MultiStepForm";
 import ContactPage from "./pages/ContactPage";
+import AboutUsPage from "./pages/AboutUsPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ChatBot from "./components/chatbot/ChatBot";
@@ -82,6 +84,8 @@ function AppContent() {
         />
         <Route path="/talent" element={<TalentPage />} />
         <Route path="/career" element={<CareersPage />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/about" element={<AboutUsPage />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/oauth-callback" element={<OAuthCallback />} />
         <Route

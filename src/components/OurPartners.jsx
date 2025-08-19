@@ -83,7 +83,7 @@ const OurPartners = () => {
             <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
               Our&nbsp;
             </span>
-            <span className="text-white">Partners</span>
+            <span className="text-white">Connections</span>
           </h2>
           <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Collaborating with industry leaders to create extraordinary
